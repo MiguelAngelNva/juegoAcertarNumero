@@ -8,7 +8,7 @@ public class Game {
 
     public Game(int min, int max) {
         setRange(min, max);
-        resetGame();
+        resetNumberGame();
     }
 
     public void setRange(int min, int max) {
@@ -19,7 +19,7 @@ public class Game {
         this.largestNumber = max;
     }
 
-    public void resetGame() {
+    public void resetNumberGame() {
         Random random = new Random();
         secretNumber = random.nextInt(largestNumber - smallestNumber + 1) + smallestNumber;
         attempts = 0;
