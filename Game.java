@@ -34,7 +34,7 @@ public class Game {
         if (userNumber > secretNumber) {
             return "El número es menor.";
         }
-        return "¡Correcto! Intentos: " + attempts;
+        return "Correcto! Intentos: " + attempts;
     }
 
     public int getAttempts() {
